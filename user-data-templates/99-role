@@ -1,0 +1,10 @@
+#!/bin/bash
+#Chef run list
+cat << "EOF" > /etc/chef/node.json
+{
+    "run_list": [ 
+        "role[maf_test]"
+    ]
+}
+EOF
+chef-solo && echo "Server ready." | wall

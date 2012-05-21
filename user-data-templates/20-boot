@@ -1,0 +1,5 @@
+#cloud-config
+packages:
+- build-essential
+- git
+- ruby1.9.3

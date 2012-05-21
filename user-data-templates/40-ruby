@@ -1,0 +1,8 @@
+#!/bin/bash
+#Disable rdoc and ri
+echo "gem: --no-ri --no-rdoc" >> /etc/skel/.gemrc
+echo "gem: --no-ri --no-rdoc" >> /root/.gemrc
+echo "gem: --no-ri --no-rdoc" >> /etc/gemrc
+echo "gem: --no-ri --no-rdoc" >> /home/deploy/.gemrc
+#Install Chef
+gem install chef
